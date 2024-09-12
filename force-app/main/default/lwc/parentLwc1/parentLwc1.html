@@ -1,0 +1,18 @@
+<template>
+  <lightning-card title="Parent Lwc">
+    <lightning-input
+      class="slds-p-horizontal_small"
+      label="Set Counter"
+      type="number"
+      min="0"
+      max="100000"
+      value={startCounter}
+      onchange={handleStartChange}
+    >
+    </lightning-input>
+    <!-- In input field we are not clicking . We are changing the value only so we use onchange. -->
+    <!-- child component calling -->
+
+    <c-child-lwc counter={startCounter}></c-child-lwc>
+  </lightning-card>
+</template>

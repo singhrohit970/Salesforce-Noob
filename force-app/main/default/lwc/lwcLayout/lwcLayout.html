@@ -1,0 +1,37 @@
+<template>
+  <div class="layout_section">
+    <h1>LWC Layout</h1>
+    <br /><br />
+
+    <!-- create a row -->
+    <lightning-layout multiple-rows="true">
+      <template for:each={data} for:item="players">
+        <lightning-layout-item
+          padding="around-small"
+          size="12"
+          large-device-size="3"
+          medium-device-size="6"
+          class="image_section"
+          key={players.id}
+        >
+          <img src={players.imageLink} />
+        </lightning-layout-item>
+      </template>
+      <!-- <lightning-layout-item padding="around-small" class="image_section">
+        <img
+          src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/10/01190618/Virat-Kohli-Height-Weight-Age-Wife-Family-Affair.jpg"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item padding="around-small" class="image_section">
+        <img
+          src="https://i.pinimg.com/564x/f6/4e/7b/f64e7bc0b4c1e14fdbac8093f0643b25.jpg"
+        />
+      </lightning-layout-item>
+      <lightning-layout-item padding="around-small" class="image_section">
+        <img
+          src="https://im.rediff.com/cricket/2023/oct/19virat.png?w=670&h=900"
+        />
+      </lightning-layout-item> -->
+    </lightning-layout>
+  </div>
+</template>

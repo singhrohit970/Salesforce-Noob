@@ -1,0 +1,44 @@
+<template>
+  <lightning-card title="Optimize" icon-name="custom:custom85">
+    <div class="slds-align_absolute-center">Select appointment</div>
+    <p>Choose Service territories</p>
+    <div style="height: 145px">
+      <lightning-datatable
+        key-field="id"
+        data={data}
+        columns={columns}
+      ></lightning-datatable>
+    </div>
+
+    <lightning-button
+      label="Optimize"
+      title="Preview"
+      class="slds-m-right_x-small"
+      onclick={handleOpclick}
+      slot="actions"
+    ></lightning-button>
+
+    <lightning-input
+      type="datetime"
+      label="Date/Time"
+      value={dateTimeValue}
+      onchange={handleDateTimeChange}
+    ></lightning-input>
+    <div class="slds-align_absolute-center">
+      <lightning-combobox
+        value={value}
+        placeholder="select Appointment"
+        options={options}
+        onchange={handleChanged}
+      >
+      </lightning-combobox>
+    </div>
+    <div>
+      <p>Number of Accounts: {accountCount}</p>
+      <lightning-button
+        label="Show Count"
+        onclick={fetchAccountCount}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>

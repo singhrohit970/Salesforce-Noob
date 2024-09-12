@@ -1,0 +1,6 @@
+<apex:page >
+  <apex:panelBar >
+  <apex:panelBarItem label="Iteam1" onenter="alert('Entering a iteam1');" onleave="alert('Leaving a iteam1');">My lawara.ocm</apex:panelBarItem>
+  <apex:panelBarItem label="Iteam2" onenter="alert('Entering a iteam2');" onleave="alert('Leaving a iteam2');">chala ja</apex:panelBarItem>
+  </apex:panelBar>
+</apex:page>

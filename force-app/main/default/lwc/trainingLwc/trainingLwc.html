@@ -1,0 +1,12 @@
+<template>
+     <lightning-card title="conditional Rendering">
+       <!-- <template if:true={userchecked}>
+        <p> {fullname} </p>
+        </template>
+        <lightning-input type="checkbox" onchange={handleclick}></lightning-input> -->
+
+        <template for:each={collegename} for:item="colleges">
+            <p class="slds-p-horizontal_small" key={colleges}>{colleges}</p>
+        </template>
+     </lightning-card>
+</template>

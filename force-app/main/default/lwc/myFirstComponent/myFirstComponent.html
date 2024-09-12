@@ -1,0 +1,109 @@
+<template>
+
+  <lightning-button variant="brand-outline" label="ADD PRODUCTS"
+
+      title="ADD PRODUCTS" onclick={showModalBox}>
+
+  </lightning-button>
+
+  <template if:true={Products}>
+
+      <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+
+          <div class="slds-modal__container">
+
+            <div class="slds-modal__header">
+
+              <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">ADD PRODUCTS</h1>
+
+            </div>
+
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+              <lightning-layout-item size="6" padding="around-small">
+
+                <lightning-input type="search" label="Search Account" onchange={handleSearch}></lightning-input>
+
+            </lightning-layout-item>
+
+      <lightning-datatable
+
+               key-field="Product2Id"
+
+               data={ProductList}
+
+               columns={columns}>
+
+       </lightning-datatable>
+
+      </div>
+
+      <div class="slds-modal__footer">
+
+        <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeModalBox}>Cancel</button>
+
+        <button class="slds-button slds-button_brand" onclick={Onselect}>Save</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+
+  </template>
+
+  <template if:true={opportunity}>
+
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+
+        <div class="slds-modal__container">
+
+          <div class="slds-modal__header">
+
+            <h1 id="modal-heading-02" class="slds-modal__title slds-hyphenate">EDIT PRODUCTS</h1>
+
+          </div>
+
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+
+            <lightning-datatable
+
+                     key-field="Product2Id"
+
+                     data={opportunity}
+
+                     columns={columns1}
+
+                     onsave={handlesave}
+
+                     errors={errors}
+
+                     draft-values={saveDraftValues}
+
+                     hide-checkbox-column
+
+                     show-row-number-column>
+
+             </lightning-datatable>
+
+            </div>
+
+          <div class="slds-modal__footer">
+
+            <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={showModalBox}>Back</button>
+
+            <button class="slds-button slds-button_brand" onclick={deselect}>Close</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+
+      </template>  
+
+</template>

@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Record view form by Salesforce Noob ">
+    <!-- record view form -->
+
+    <lightning-record-view-form
+      record-id={recordId}
+      object-api-name={objectApiName}
+      density="Compact"
+    >
+      <lightning-output-field field-name={nameField}></lightning-output-field>
+      <lightning-output-field field-name={emailField}></lightning-output-field>
+      <lightning-output-field field-name={goalField}></lightning-output-field>
+      <lightning-output-field field-name={clubField}></lightning-output-field>
+    </lightning-record-view-form>
+  </lightning-card>
+</template>

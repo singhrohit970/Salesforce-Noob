@@ -1,0 +1,29 @@
+<template>
+  <lightning-card title="Create Record By Apex">
+    <div class="slds-m-around_medium">
+      <lightning-input
+        label="id"
+        disabled
+        value={accountIds}
+        onchange={handleIdChange}
+      ></lightning-input>
+      <lightning-input
+        label="Name"
+        onchange={handleNameChange}
+        class="slds-m-bottom_x-small"
+      ></lightning-input>
+
+      <lightning-input
+        label="Industry"
+        onchange={handleIndustryChange}
+        class="slds-m-bottom_x-small"
+      ></lightning-input>
+
+      <lightning-button
+        label="Create Account"
+        variant="brand"
+        onclick={onCreateRecord}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>

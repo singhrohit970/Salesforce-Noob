@@ -1,0 +1,24 @@
+<apex:page >
+<apex:form >
+ 
+ <apex:pageBlock title="First Block">
+ <apex:pageBlockSection title="First Block">
+ <Apex:pageBlockSection >MytutorialRack</Apex:pageBlockSection>
+ <Apex:pageBlockSection >Salesforce Developer</Apex:pageBlockSection>
+ <Apex:pageBlockSection >Salesforce Admin</Apex:pageBlockSection>
+ </apex:pageBlockSection>
+
+ 
+ <apex:pageBlockSection title="Second Block">
+ <Apex:pageBlockSection >Rohit</Apex:pageBlockSection>
+ <Apex:pageBlockSection >Radha</Apex:pageBlockSection>
+ <Apex:pageBlockSection >Amit</Apex:pageBlockSection>
+ </apex:pageBlockSection>
+ 
+ <apex:pageBlockButtons >
+ <apex:commandButton Value="Save"/>
+ <apex:commandButton value="Cancel"/>
+ </apex:pageBlockButtons>
+ </apex:pageBlock> 
+ </apex:form>
+</apex:page>

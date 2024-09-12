@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Account Datatable with Checkbox">
+    <lightning-datatable
+      key-field="Id"
+      data={accountData}
+      columns={columns}
+      onrowselection={handleRowSelection}
+      selected-rows={selectedRows}
+      enable-row-level-actions="true"
+    >
+    </lightning-datatable>
+  </lightning-card>
+  <div if:true={selectedAccountId}>
+    <p>Selected Account ID: {selectedAccountId}</p>
+  </div>
+</template>

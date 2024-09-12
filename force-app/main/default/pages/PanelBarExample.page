@@ -1,0 +1,7 @@
+<apex:page >
+  <apex:panelBar >
+  <apex:panelBarItem label="Iteam1"> Hello How Are you</apex:panelBarItem>
+  <apex:panelbarItem label="Iteam2"> I am the King</apex:panelbarItem>
+  <Apex:panelBarItem label="Iteam3">Hey are you a joker?</Apex:panelBarItem>
+  </apex:panelBar>
+</apex:page>

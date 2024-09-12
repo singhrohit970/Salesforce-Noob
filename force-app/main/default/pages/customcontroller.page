@@ -1,0 +1,8 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="Congratulation {!$User.FirstName}">
+
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

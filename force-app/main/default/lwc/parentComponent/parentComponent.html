@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="Parent Card">
+    <!-- calling the child childComponent. Use namespace c and then component name in kebab case -->
+    <c-child-component></c-child-component>
+    <lightning-button
+      label="Submit"
+      variant="brand"
+      onclick={handleClick}
+    ></lightning-button>
+  </lightning-card>
+</template>

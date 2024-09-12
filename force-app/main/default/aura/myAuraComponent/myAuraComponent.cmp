@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+  <lightning:card title="Aura Hellow World" iconName="custom:custom14">
+  </lightning:card>
+
+  <!-- calling the lwc child component in Aura componenet -->
+  <!-- <c:lwcHelloWorld /> -->
+
+  <!-- passing value from Aura to LWC component -->
+  <c:lwcHelloWorld aura:id="childLwc" name="Rohit" />
+  <lightning:button
+    label="Neutral"
+    title="Neutral action"
+    onclick="{!c.myAction}"
+  />
+</aura:component>

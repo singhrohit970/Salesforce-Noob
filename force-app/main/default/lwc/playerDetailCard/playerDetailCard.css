@@ -1,0 +1,15 @@
+*{
+
+}
+
+h1{
+    font-weight: bols;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+img .cricketer{
+    width:100%;
+    margin-bottom: 0.5rem;
+}

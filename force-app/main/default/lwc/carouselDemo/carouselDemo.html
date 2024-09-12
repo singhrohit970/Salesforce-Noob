@@ -1,0 +1,51 @@
+<!-- optimized solution -->
+<template>
+  <lightning-carousel>
+    <!-- check jo player of object h wo empty to nhi h. Here what we have done is
+    created an array of object the with the help of for each loop simply in one
+    lightnig image caroseul we are able to show image. -->
+
+    <template if:true={players}>
+      <!-- one by one data will movve to football -->
+      <template for:each={players} for:item="football">
+        <lightning-carousel-image
+          key={football.id}
+          src={football.src}
+          header={football.header}
+          description="goal king"
+          alternative-text="Test"
+          href={football.href}
+        >
+        </lightning-carousel-image>
+      </template>
+    </template>
+  </lightning-carousel>
+
+  <!-- <lightning-carousel disable-auto-scroll>
+    <lightning-carousel-image
+      src="https://c4.wallpaperflare.com/wallpaper/133/246/533/soccer-neymar-brazilian-wallpaper-preview.jpg"
+      header="Neymer jr."
+      description="goal king"
+      alternative-text="Test"
+      href="https://en.wikipedia.org/wiki/Neymar"
+    >
+    </lightning-carousel-image>
+
+    <lightning-carousel-image
+      src="https://www.planetsport.com/image-library/square/1200/c/cristiano-ronaldo-portugal-5-june-2022.jpg"
+      header="Neymer jr."
+      description="goal king"
+      alternative-text="Test"
+      href="https://en.wikipedia.org/wiki/Neymar"
+    >
+    </lightning-carousel-image>
+
+    <lightning-carousel-image
+      src="https://media.gettyimages.com/id/955410340/photo/lionel-messi-of-barcelona-celebrates-after-scoring-his-sides-second-goal-during-the-la-liga.jpg?s=612x612&w=gi&k=20&c=d5_2WQ8lkbtoUwDYmVdTjRTrnKarmwC-r3EwWZ84fsM="
+      header="Neymer jr."
+      description="goal king"
+      alternative-text="Test"
+      href="https://en.wikipedia.org/wiki/Neymar"
+    >
+    </lightning-carousel-image> -->
+</template>

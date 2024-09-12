@@ -1,0 +1,7 @@
+<template>
+    <lightning-combobox label="Business Unit" value={selectedBU} options={businessUnits}
+        onchange={handleBUChange}></lightning-combobox>
+    <lightning-combobox label="Product" value={selectedProduct} options={filteredProducts}
+        onchange={handleProductChange} disabled={disableProductSelection}></lightning-combobox>
+    <lightning-button label="Add Product" onclick={handleAddProduct}></lightning-button>
+</template>

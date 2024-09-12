@@ -1,0 +1,31 @@
+<template>
+  <!-- lwc button -->
+  <lightning-button label={buttonLabel} variant="brand" onclick={handleShow}>
+  </lightning-button>
+
+  <!-- Lwc data table -->
+  <!-- datatable table for opportunity record -->
+  <!-- Conditional rendering -->
+  <template if:true={showDatatable}>
+    <div class="slds-p-top_large" style="height: 200px">
+      <lightning-datatable
+        key-field="id"
+        data={opportunityData}
+        columns={columns1}
+        hide-checkbox-column
+      >
+      </lightning-datatable>
+    </div>
+
+    <!-- datatable for contact records -->
+    <div class="slds-p-top_large" style="height: 200px">
+      <lightning-datatable
+        key-field="id"
+        data={contactData}
+        columns={columns2}
+        hide-checkbox-column
+      >
+      </lightning-datatable>
+    </div>
+  </template>
+</template>

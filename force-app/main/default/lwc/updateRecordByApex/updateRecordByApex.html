@@ -1,0 +1,21 @@
+<template>
+  <div class="slds-m-around_medium">
+    <lightning-card title="Update Record By Apex">
+      <lightning-input
+        label="Name"
+        onchange={handleNameChange}
+        class="slds-m-bottom_x-small"
+      ></lightning-input>
+      <lightning-input
+        label="Industry"
+        onchange={handleIndustryChange}
+        class="slds-m-bottom_x-small"
+      ></lightning-input>
+      <lightning-button
+        label="Update Account"
+        onclick={onUpdateRecord}
+        variant="brand"
+      ></lightning-button>
+    </lightning-card>
+  </div>
+</template>
